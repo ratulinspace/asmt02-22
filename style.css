@@ -48,3 +48,15 @@ h1 {
     padding: 7px 14px;
     border-radius: 50px;
 }
+.brand-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+/* Item part */
+.collection-header{
+    margin-top: 180px;
+    text-align: center;
+    font-size: 30px;
+}
