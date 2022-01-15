@@ -59,7 +59,9 @@ h1 {
     align-items: center;
     margin-top: 70px;
 }
-/* Item part */
+/*--------------
+    Item part
+----------------*/
 .collection-header{
     margin-top: 180px;
     margin-bottom: 50px;
@@ -152,7 +154,9 @@ footer {
     font-weight:200;
 }
 
-/* Media Query */
+/*----------------
+    Media Query 
+ ----------------*/
 @media (max-width:668px) and (min-width: 200px) {
     .top-part{
         display: flex;
@@ -169,7 +173,7 @@ footer {
     .brand-logo {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 70px;
+        margin-top: 71px;
     }
     .brand-logo img{
         margin-top: 15px;
@@ -202,4 +206,6 @@ footer {
         flex-direction: column;
     }
 }
+
+/*-------------------- The END--------------- */
     
