@@ -1,13 +1,14 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin-left: 120px;
-    margin-right: 100px;
-    margin-top: 40px;
+    margin-bottom: 0;
 }
 /*--------------
     Header part
 ----------------*/
 header{
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -28,6 +29,10 @@ nav li a{
 /*------------
     Main
 -------------*/
+main{
+    margin-left: 120px;
+    margin-right: 100px;
+}
 h1 {
     font-size: 60px;
     margin-bottom: 10px;
@@ -44,7 +49,7 @@ h1 {
     font-weight: 400;
     line-height: 24px;
     color: white;
-    background-color: #E02C6D;
+    background-color: #FF4F5A;
     padding: 7px 14px;
     border-radius: 50px;
 }
@@ -57,8 +62,9 @@ h1 {
 /* Item part */
 .collection-header{
     margin-top: 180px;
+    margin-bottom: 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .products {
     display: grid;
@@ -101,7 +107,7 @@ h1 {
 }
 .see-more a{
     text-decoration: none;
-    color: #E02C6DDE;
+    color: #FF4F5A;
 }
 /*---------------------
     Free-home-delivery
@@ -145,3 +151,55 @@ footer {
     font-size: 14px;
     font-weight:200;
 }
+
+/* Media Query */
+@media (max-width:668px) and (min-width: 200px) {
+    .top-part{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .top-part h1{
+        font-size: 35px;
+    }
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .brand-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 70px;
+    }
+    .brand-logo img{
+        margin-top: 15px;
+    }
+    .products {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        margin-left: 15px;
+    }
+    .free-home-delivery{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .free-home-delivery img{
+    width: 200px;
+    }
+    header{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }    
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
